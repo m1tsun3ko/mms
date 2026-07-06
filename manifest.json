@@ -1,7 +1,7 @@
 {
   "name": "DM Stuck",
   "short_name": "dmstuck",
-  "description": "платформа для общения."",
+  "description": "платформа для общения.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
