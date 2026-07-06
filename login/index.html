@@ -2,6 +2,10 @@
 <html lang="ru" dir="ltr">
   
 <head>
+
+  <link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#ffb6d5">
+
 <style>
 html{background:#fff}
 body{background:#fff;margin:0;color:#fff}
@@ -51,6 +55,12 @@ body{background:#fff;margin:0;color:#fff}
   <noscript>
     For the website to work, you need JavaScript.
   </noscript>
+
+  <script>
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("/sw.js");
+}
+</script>
 
   <video class="bg-video" autoplay muted loop playsinline draggable="false">
     <source src="/addictions/vids/background.MP4" type="video/mp4">
