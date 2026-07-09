@@ -1,88 +1,151 @@
-<!doctype html>
-<html lang="ru" dir="ltr">
-  
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="manifest" href="/manifest.json">
-<meta name="theme-color" content="#ffb6d5">
+    <title>MMS • Вход</title>
 
-<style>
-html{background:#fff}
-body{background:#fff;margin:0;color:#fff}
-</style>
-  
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>dmstuck [добро пожаловать]</title>
-  <meta name="description" content="платформа для общения.">
-
-  <meta name="referrer" content="strict-origin-when-cross-origin">
-  <meta name="robots" content="index, follow">
-
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-
-  <link rel="canonical" href="https://www.dmstck.com/">
-
-  <link rel="icon" href="/addictions/imgs/favicon.ico" sizes="any">
-  <link rel="icon" href="/addictions/imgs/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="/addictions/imgs/apple-touch-icon.png">
-  
-
-  <meta name="theme-color" content="#000000">
-  <meta name="color-scheme" content="light dark">
-
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="dmstuck [главная]">
-  <meta property="og:description" content="платформа для общения.">
-  <meta property="og:url" content="https://www.dmstck.com/">
-  <meta property="og:image" content="https://www.dmstck.com/addictions/imgs/preview.jpg">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="dmstuck [главная]">
-  <meta name="twitter:description" content="платформа для общения.">
-  <meta name="twitter:image" content="https://www.dmstck.com/addictions/imgs/preview.jpg">
-
-  <link rel="stylesheet" href="/addictions/css/style.css">
-
-  <script src="/addictions/js/main.js" defer></script>
+    <link rel="stylesheet" href="../addictions/css/variables.css">
+    <link rel="stylesheet" href="../addictions/css/themes.css">
+    <link rel="stylesheet" href="../addictions/css/base.css">
+    <link rel="stylesheet" href="../addictions/css/login.css">
 </head>
 
 <body>
-  <noscript>
-    For the website to work, you need JavaScript.
-  </noscript>
 
-  <script>
-if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("/sw.js");
-}
-</script>
-
-  <video class="bg-video" autoplay muted loop playsinline draggable="false">
-    <source src="/addictions/vids/background.MP4" type="video/mp4">
-  </video>
-
-  <main id="main-content">
-    <img
-      class="center-card"
-      src="/addictions/imgs/welcome_new.png"
-      draggable="false"
-    >
-
-    <div class="ct-text">© all rights reserved
+<div class="background">
+    <div class="blur blur-1"></div>
+    <div class="blur blur-2"></div>
 </div>
-  </main>
 
-  <script>
-    document.querySelectorAll('img, video').forEach(el => {
-      el.addEventListener('contextmenu', e => e.preventDefault());
-      el.addEventListener('dragstart', e => e.preventDefault());
-    });
-  </script>
+<main class="login-page">
 
-  <footer>
-  </footer>
+    <section class="login-card">
+
+        <div class="logo">
+
+            <div class="logo-circle">
+                M
+            </div>
+
+            <h1>MMS</h1>
+
+            <p>
+                Добро пожаловать обратно
+            </p>
+
+        </div>
+
+        <form id="loginForm">
+
+            <div class="input-group">
+
+                <label>
+                    Логин или Email
+                </label>
+
+                <input
+                    type="text"
+                    name="login"
+                    autocomplete="username"
+                    placeholder="Введите логин">
+
+            </div>
+
+            <div class="input-group">
+
+                <label>
+                    Пароль
+                </label>
+
+                <div class="password-box">
+
+                    <input
+                        id="password"
+                        type="password"
+                        name="password"
+                        autocomplete="current-password"
+                        placeholder="Введите пароль">
+
+                    <button
+                        type="button"
+                        class="show-password"
+                        id="togglePassword">
+
+                        👁
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="login-options">
+
+                <label class="remember">
+
+                    <input
+                        type="checkbox"
+                        name="remember">
+
+                    <span>Запомнить меня</span>
+
+                </label>
+
+                <a href="#">
+                    Забыли пароль?
+                </a>
+
+            </div>
+
+            <button
+                class="login-btn"
+                type="submit">
+
+                Войти
+
+            </button>
+
+        </form>
+
+        <div class="divider">
+
+            <span></span>
+
+            <p>или</p>
+
+            <span></span>
+
+        </div>
+
+        <a
+            href="../register/"
+            class="register-btn">
+
+            Создать аккаунт
+
+        </a>
+
+        <div class="theme-switch">
+
+            <button
+                id="themeButton"
+                type="button">
+
+                🌙
+
+            </button>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="../addictions/js/theme.js"></script>
+<script src="../addictions/js/login.js"></script>
+
 </body>
 </html>
