@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ru" dir="ltr">
+<html lang="ru" data-theme="dark">
   
 <head>
 
@@ -7,7 +7,7 @@
 <meta name="theme-color" content="#ffb6d5">
 
 <style>
-html{background:#fff}
+html{background:#ca5959}
 body{background:#fff;margin:0;color:#fff}
 </style>
   
@@ -46,6 +46,13 @@ body{background:#fff;margin:0;color:#fff}
 
   <link rel="stylesheet" href="/addictions/css/style.css">
 
+
+    <link rel="stylesheet" href="../addictions/css/variables.css">
+    <link rel="stylesheet" href="../addictions/css/themes.css">
+    <link rel="stylesheet" href="../addictions/css/base.css">
+    <link rel="stylesheet" href="../addictions/css/feed.css">
+
+
   <script src="/addictions/js/main.js" defer></script>
 </head>
 
@@ -60,29 +67,48 @@ if ("serviceWorker" in navigator) {
 }
 </script>
 
-  <video class="bg-video" autoplay muted loop playsinline draggable="false">
-    <source src="/addictions/vids/background.MP4" type="video/mp4">
-  </video>
+<div class="layout">
 
-  <main id="main-content">
-    <img
-      class="center-card"
-      src="/addictions/imgs/welcome_new.png"
-      draggable="false"
-    >
+    <!-- ЛЕВАЯ КОЛОНКА -->
 
-    <div class="ct-text">© all rights reserved
+    <aside class="sidebar">
+
+        <?php include "sidebar.html"; ?>
+
+    </aside>
+
+       <!-- ОСНОВНАЯ ЧАСТЬ -->
+
+    <div class="content">
+
+        <?php include "header.html"; ?>
+
+        <main class="feed">
+
+            <?php include "create-post.html"; ?>
+
+            <?php include "post.html"; ?>
+            <?php include "post.html"; ?>
+            <?php include "post.html"; ?>
+            <?php include "post.html"; ?>
+            <?php include "post.html"; ?>
+
+        </main>
+
+    </div>
+
+     <!-- ПРАВАЯ КОЛОНКА -->
+
+    <aside class="rightbar">
+
+        <?php include "rightbar.html"; ?>
+
+    </aside>
+
 </div>
-  </main>
 
-  <script>
-    document.querySelectorAll('img, video').forEach(el => {
-      el.addEventListener('contextmenu', e => e.preventDefault());
-      el.addEventListener('dragstart', e => e.preventDefault());
-    });
-  </script>
+<script src="../addictions/js/theme.js"></script>
 
-  <footer>
-  </footer>
+
 </body>
 </html>
