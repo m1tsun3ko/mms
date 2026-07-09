@@ -73,7 +73,7 @@ if ("serviceWorker" in navigator) {
 
     <aside class="sidebar">
 
-        <?php include "sidebar.html"; ?>
+        <?php include "sidebar.php"; ?>
 
     </aside>
 
@@ -81,17 +81,17 @@ if ("serviceWorker" in navigator) {
 
     <div class="content">
 
-        <?php include "header.html"; ?>
+        <?php include "header.php"; ?>
 
         <main class="feed">
 
-            <?php include "create-post.html"; ?>
+            <?php include "create-post.php"; ?>
 
-            <?php include "post.html"; ?>
-            <?php include "post.html"; ?>
-            <?php include "post.html"; ?>
-            <?php include "post.html"; ?>
-            <?php include "post.html"; ?>
+            <?php include "post.php"; ?>
+            <?php include "post.php"; ?>
+            <?php include "post.php"; ?>
+            <?php include "post.php"; ?>
+            <?php include "post.php"; ?>
 
         </main>
 
@@ -101,7 +101,7 @@ if ("serviceWorker" in navigator) {
 
     <aside class="rightbar">
 
-        <?php include "rightbar.html"; ?>
+        <?php include "rightbar.php"; ?>
 
     </aside>
 
