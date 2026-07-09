@@ -1,0 +1,95 @@
+/*
+==================================================
+MMS DESIGN SYSTEM
+==================================================
+*/
+
+:root{
+
+    /*
+    ==============================================
+    TYPOGRAPHY
+    ==============================================
+    */
+
+    --font: Inter, sans-serif;
+
+    --radius-small:10px;
+    --radius:14px;
+    --radius-large:20px;
+
+    --transition:.15s;
+
+}
+
+/*
+==================================================
+DARK
+==================================================
+*/
+
+html[data-theme="dark"]{
+
+    --bg:#141214;
+
+    --surface:#1d1b1e;
+
+    --surface-light:#262327;
+
+    --surface-hover:#302b30;
+
+    --border:#393438;
+
+    --text:#ffffff;
+
+    --text-secondary:#aea6af;
+
+    --caramel:#cf9358;
+
+    --caramel-hover:#dca673;
+
+    --caramel-dark:#a86d3f;
+
+    --neon:#ff69b4;
+
+    --red:#912c37;
+
+    --green:#4CAF50;
+
+}
+
+/*
+==================================================
+LIGHT
+==================================================
+*/
+
+html[data-theme="light"]{
+
+    --bg:#f5f2ef;
+
+    --surface:#ffffff;
+
+    --surface-light:#faf7f4;
+
+    --surface-hover:#f0ebe6;
+
+    --border:#ddd7d1;
+
+    --text:#2a2a2a;
+
+    --text-secondary:#666666;
+
+    --caramel:#b87340;
+
+    --caramel-hover:#cc8d5a;
+
+    --caramel-dark:#955629;
+
+    --neon:#ff5cb3;
+
+    --red:#c0392b;
+
+    --green:#3ca35b;
+
+}

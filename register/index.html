@@ -1,88 +1,156 @@
-<!doctype html>
-<html lang="ru" dir="ltr">
-  
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+
 <head>
 
-  <link rel="manifest" href="/manifest.json">
-<meta name="theme-color" content="#ffb6d5">
-  
-<style>
-html{background:#fff}
-body{background:#fff;margin:0;color:#fff}
-</style>
-  
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>dmstuck [добро пожаловать]</title>
-  <meta name="description" content="платформа для общения.">
+    <title>MMS • Регистрация</title>
 
-  <meta name="referrer" content="strict-origin-when-cross-origin">
-  <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="../addictions/css/variables.css">
+    <link rel="stylesheet" href="../addictions/css/themes.css">
+    <link rel="stylesheet" href="../addictions/css/base.css">
+    <link rel="stylesheet" href="../addictions/css/register.css">
 
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-
-  <link rel="canonical" href="https://www.dmstck.com/">
-
-  <link rel="icon" href="/addictions/imgs/favicon.ico" sizes="any">
-  <link rel="icon" href="/addictions/imgs/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="/addictions/imgs/apple-touch-icon.png">
-  
-
-  <meta name="theme-color" content="#000000">
-  <meta name="color-scheme" content="light dark">
-
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="dmstuck [главная]">
-  <meta property="og:description" content="платформа для общения.">
-  <meta property="og:url" content="https://www.dmstck.com/">
-  <meta property="og:image" content="https://www.dmstck.com/addictions/imgs/preview.jpg">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="dmstuck [главная]">
-  <meta name="twitter:description" content="платформа для общения.">
-  <meta name="twitter:image" content="https://www.dmstck.com/addictions/imgs/preview.jpg">
-
-  <link rel="stylesheet" href="/addictions/css/style.css">
-
-  <script src="/addictions/js/main.js" defer></script>
 </head>
 
 <body>
-  <noscript>
-    For the website to work, you need JavaScript.
-  </noscript>
 
-  <script>
-if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("/sw.js");
-}
-</script>
+<main class="register-page">
 
-  <video class="bg-video" autoplay muted loop playsinline draggable="false">
-    <source src="/addictions/vids/background.MP4" type="video/mp4">
-  </video>
+    <section class="register-card">
 
-  <main id="main-content">
-    <img
-      class="center-card"
-      src="/addictions/imgs/welcome_new.png"
-      draggable="false"
-    >
+        <div class="logo">
 
-    <div class="ct-text">© all rights reserved
-</div>
-  </main>
+            <div class="logo-circle">M</div>
 
-  <script>
-    document.querySelectorAll('img, video').forEach(el => {
-      el.addEventListener('contextmenu', e => e.preventDefault());
-      el.addEventListener('dragstart', e => e.preventDefault());
-    });
-  </script>
+            <h1>MMS</h1>
 
-  <footer>
-  </footer>
+            <p>Создание нового аккаунта</p>
+
+        </div>
+
+        <form id="registerForm">
+
+            <div class="row">
+
+                <div class="input-group">
+
+                    <label>Имя</label>
+
+                    <input
+                        type="text"
+                        name="first_name"
+                        maxlength="32"
+                        autocomplete="given-name"
+                        required>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Фамилия</label>
+
+                    <input
+                        type="text"
+                        name="last_name"
+                        maxlength="32"
+                        autocomplete="family-name"
+                        required>
+
+                </div>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Логин</label>
+
+                <input
+                    type="text"
+                    name="username"
+                    maxlength="32"
+                    autocomplete="username"
+                    required>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Email</label>
+
+                <input
+                    type="email"
+                    name="email"
+                    autocomplete="email"
+                    required>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Пароль</label>
+
+                <input
+                    type="password"
+                    name="password"
+                    autocomplete="new-password"
+                    required>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Повторите пароль</label>
+
+                <input
+                    type="password"
+                    name="password_repeat"
+                    autocomplete="new-password"
+                    required>
+
+            </div>
+
+            <label class="checkbox">
+
+                <input
+                    type="checkbox"
+                    name="rules"
+                    required>
+
+                <span>
+                    Я принимаю правила сайта
+                </span>
+
+            </label>
+
+            <button
+                type="submit"
+                class="register-btn">
+
+                Создать аккаунт
+
+            </button>
+
+        </form>
+
+        <div class="bottom">
+
+            <span>Уже зарегистрированы?</span>
+
+            <a href="../login/">
+                Войти
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="../addictions/js/theme.js"></script>
+<script src="../addictions/js/register.js"></script>
+
 </body>
 </html>
